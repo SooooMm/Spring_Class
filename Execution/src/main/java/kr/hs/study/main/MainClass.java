@@ -28,7 +28,7 @@ public class MainClass {
 		t3.Test3();
 		
 		//TestBean4 t4 = ctx.getBean("T4",TestBean4.class);
-		t4.Test3();
+		
 		ctx.close();
 	}
 
