@@ -1,5 +1,7 @@
 package kr.hs.study.main;
 
+import java.util.List;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import kr.hs.study.beans.TestBean;
@@ -31,10 +33,13 @@ public class Mainclass {
 		 */
 		
 		//delete
-		TestBean t4 = new TestBean();
+		/*TestBean t4 = new TestBean();
 		t4.setData1(20);
 		obj1.delete_data(t4);
-		System.out.println("delete");
+		System.out.println("delete");*/
+		
+		List<TestBean> list = obj1.select_data();
+		
 		
 		ctx.close();
 
